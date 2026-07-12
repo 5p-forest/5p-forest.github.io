@@ -9,7 +9,7 @@
 <title>《五力》森林 🌲</title>
 
 <meta name="description"
-content="《五力》森林是一座以 Transactional Analysis（TA，溝通分析）為基礎發展的自我探索空間，透過森林旅記陪伴人們理解自己、理解情緒，也理解他人，找到適合自己的前進方向。">
+content="《五力》森林是一座以 Transactional Analysis（TA，溝通分析）為基礎發展的自我探索空間，透過森林旅記陪伴人們理解自己、理解情緒、理解他人，找到適合自己的前進方向。">
 
 <style>
 
@@ -22,93 +22,176 @@ body{
     background:#fafaf8;
     color:#4f4f4f;
     font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     min-height:100vh;
 }
 
 .container{
+
     width:100%;
-    max-width:880px;
-    padding:42px 28px;
+    max-width:860px;
+
     text-align:center;
+
+    padding:40px 24px;
+
 }
 
 h1{
-    margin:0 0 30px;
-    font-size:50px;
+
+    margin:0 0 28px;
+
+    font-size:48px;
+
     font-weight:700;
+
     color:#5f4732;
+
     white-space:nowrap;
+
 }
 
 .intro{
+
     font-size:20px;
+
     line-height:1.9;
+
     margin-bottom:24px;
+
 }
 
 .content{
+
     font-size:20px;
+
     line-height:2;
+
     margin-bottom:42px;
+
 }
 
 .quote{
-    font-size:26px;
+
+    font-size:25px;
+
     line-height:1.9;
+
     color:#666;
+
     margin-bottom:42px;
+
 }
 
 .button{
+
     display:inline-block;
+
     padding:16px 44px;
+
     border-radius:999px;
+
     background:#7c9263;
-    color:white;
+
+    color:#fff;
+
     text-decoration:none;
+
     font-size:22px;
-    transition:all .25s ease;
+
+    transition:.25s;
+
 }
 
 .button:hover{
-    background:#667c51;
+
+    background:#677b52;
+
+}
+
+.mobile{
+    display:none;
+}
+
+.desktop{
+    display:inline;
 }
 
 @media (max-width:768px){
 
-    .container{
-        padding:30px 20px;
-    }
+body{
 
-    h1{
-        font-size:36px;
-        margin-bottom:24px;
-    }
+    align-items:flex-start;
 
-    .intro{
-        font-size:17px;
-        margin-bottom:20px;
-    }
+}
 
-    .content{
-        font-size:17px;
-        margin-bottom:34px;
-        line-height:1.9;
-    }
+.container{
 
-    .quote{
-        font-size:21px;
-        margin-bottom:34px;
-        line-height:1.8;
-    }
+    padding:26px 16px 36px;
 
-    .button{
-        font-size:20px;
-        padding:15px 34px;
-    }
+}
+
+h1{
+
+    font-size:32px;
+
+    margin-bottom:22px;
+
+}
+
+.intro{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+.content{
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+}
+
+.quote{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.button{
+
+    font-size:18px;
+
+    padding:15px 34px;
+
+}
+
+.desktop{
+
+    display:none;
+
+}
+
+.mobile{
+
+    display:inline;
+
+}
 
 }
 
@@ -124,28 +207,68 @@ h1{
 
 <div class="intro">
 
+<span class="desktop">
+
 一座以 TA 溝通分析為基礎發展的《五力》森林。
+
+</span>
+
+<span class="mobile">
+
+一座以 TA 溝通分析<br>
+為基礎發展的<br>
+《五力》森林。
+
+</span>
 
 </div>
 
 <div class="content">
 
+<span class="desktop">
+
 透過森林旅記，陪伴人們理解自己、理解他人，<br>
 也理解那些藏在情緒背後的內在歷程。
+
+</span>
+
+<span class="mobile">
+
+透過森林旅記，<br>
+陪伴人們理解自己、理解他人。<br><br>
+
+也理解那些<br>
+藏在情緒背後的內在歷程。
+
+</span>
 
 </div>
 
 <div class="quote">
 
+<span class="desktop">
+
 每個人，都有屬於自己的森林。<br>
 《五力》森林，只是陪你一起走一段路。
 
+</span>
+
+<span class="mobile">
+
+每個人，<br>
+都有屬於自己的森林。<br><br>
+
+《五力》森林，<br>
+只是陪你一起走一段路。
+
+</span>
+
 </div>
 
-<a
-class="button"
+<a class="button"
 href="https://5p-forest.notion.site/5power"
-target="_blank">
+target="_blank"
+rel="noopener noreferrer">
 
 🌲　走進森林
 
