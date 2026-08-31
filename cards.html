@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>五力物件卡</title>
+
+<style>
+
+body{
+  margin:0;
+  padding:40px 20px;
+  background:#f5f5f5;
+  text-align:center;
+  font-family:sans-serif;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  gap:10px 20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:220px;
+  height:auto;
+  margin:40px 0;
+  perspective:1000px;
+  cursor:pointer;
+}
+
+.card-inner{
+  position:relative;
+  width:100%;
+  transition:transform 0.6s;
+  transform-style:preserve-3d;
+}
+
+.card.flipped .card-inner{
+  transform:rotateY(180deg);
+}
+
+.card-face{
+  width:100%;
+  backface-visibility:hidden;
+}
+
+.card-face img{
+  width:100%;
+  display:block;
+}
+
+.card-back{
+  position:absolute;
+  top:0;
+  left:0;
+  transform:rotateY(180deg);
+}
+
+@media (max-width: 768px){
+
+  .cards{
+    flex-wrap:wrap;
+    gap:5px 20px;
+  }
+
+  .card{
+    width:160px;
+    margin:5px 0;
+    flex-shrink:0;
+  }
+
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<h1>五力物件卡</h1>
+
+<div class="cards">
+
+
+<!-- 🔴 守門力 -->
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+
+  <div class="card-inner">
+
+    <div class="card-face">
+      <img src="gate_front.png">
+    </div>
+
+    <div class="card-face card-back">
+      <img src="gate_back.png">
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- 🟡 自發力 -->
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+
+  <div class="card-inner">
+
+    <div class="card-face">
+      <img src="action_front.png">
+    </div>
+
+    <div class="card-face card-back">
+      <img src="action_back.png">
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- 🟢 調適力 -->
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+
+  <div class="card-inner">
+
+    <div class="card-face">
+      <img src="adapt_front.png">
+    </div>
+
+    <div class="card-face card-back">
+      <img src="adapt_back.png">
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- 🔵 照顧力 -->
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+
+  <div class="card-inner">
+
+    <div class="card-face">
+      <img src="care_front.png">
+    </div>
+
+    <div class="card-face card-back">
+      <img src="care_back.png">
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- 🟣 釐清力 -->
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+
+  <div class="card-inner">
+
+    <div class="card-face">
+      <img src="clear_front.png">
+    </div>
+
+    <div class="card-face card-back">
+      <img src="clear_back.png">
+    </div>
+
+  </div>
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>
