@@ -148,6 +148,38 @@ h1{
 
 }
 
+/* ---------- 已揭曉的照顧力 ---------- */
+
+.care-button{
+
+    border:none;
+    background:none;
+
+    font:inherit;
+    font-weight:600;
+
+    color:#4F7DB8;
+
+    cursor:pointer;
+
+    padding:0;
+
+}
+
+.care-button:hover{
+
+    opacity:0.75;
+
+}
+
+.care-button:focus-visible{
+
+    outline:2px solid #4F7DB8;
+    outline-offset:4px;
+    border-radius:4px;
+
+}
+    
 .clarify-button:hover{
 
     opacity:0.75;
@@ -426,8 +458,13 @@ footer{
 <span class="guard-power">守門力</span>｜
 <span class="spontaneous-power">自發力</span>｜
 <span class="adapt-power">調適力</span>｜
-<span class="care-power">照顧力</span>｜
 <button
+    class="care-button"
+    type="button"
+    onclick="openCareCard()"
+    aria-label="查看已揭曉的照顧力物件卡"
+>照顧力</button>｜
+<button  
     class="clarify-button"
     type="button"
     onclick="openClarifyCard()"
@@ -489,6 +526,34 @@ rel="noopener noreferrer">森林旅記</a>
 
 </div>
 
+<!-- ---------- 照顧力物件卡 ---------- -->
+
+<div
+    id="careModal"
+    class="card-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="照顧力物件卡"
+    onclick="closeCareCard(event)"
+>
+
+<div class="card-modal-content">
+
+<button
+    class="close-button"
+    type="button"
+    onclick="closeCareCard()"
+    aria-label="關閉"
+>×</button>
+
+<img
+    src="care-card.png"
+    alt="照顧力物件卡"
+>
+
+</div>
+
+</div>
 
 <script>
 
@@ -524,7 +589,38 @@ function closeClarifyCard(event){
 
 }
 
+function openCareCard(){
 
+    const modal = document.getElementById("careModal");
+
+    modal.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closeCareCard(event){
+
+    const modal = document.getElementById("careModal");
+
+    /* 點擊牌卡本身時不要關閉 */
+
+    if(
+        event &&
+        event.target.closest(".card-modal-content")
+    ){
+
+        return;
+
+    }
+
+    modal.classList.remove("show");
+
+    document.body.style.overflow = "";
+
+}
+    
 /* ---------- Esc 關閉 ---------- */
 
 document.addEventListener("keydown", function(event){
@@ -532,7 +628,7 @@ document.addEventListener("keydown", function(event){
     if(event.key === "Escape"){
 
         closeClarifyCard();
-
+        closeCareCard();
     }
 
 });
