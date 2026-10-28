@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 
@@ -6,209 +7,181 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>《五力》森林 </title>
+<title>《五力》森林</title>
 
 <meta name="description"
 content="《五力》森林是一座以 Transactional Analysis（TA，溝通分析）為基礎發展的自我探索空間，陪伴人們探索內在，並找到屬於自己的內在森林。">
 
 <meta name="theme-color" content="#7c9263">
-    
+
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 
-    
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-
-    background:#fafaf8;
-    color:#4f4f4f;
+body {
+    background: #fafaf8;
+    color: #4f4f4f;
 
     font-family:
     "Noto Sans TC",
     "PingFang TC",
     "Microsoft JhengHei",
     sans-serif;
-
 }
 
-main{
+main {
+    min-height: 92vh;
 
-    min-height:92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:28px 20px;
-
+    padding: 28px 20px;
 }
 
-.container{
+.container {
+    width: 100%;
+    max-width: 760px;
 
-    width:100%;
-    max-width:760px;
-
-    text-align:center;
-
+    text-align: center;
 }
 
-h1{
+/* 五力森林 Logo */
 
-    color:#5f4732;
-
-    font-size:50px;
-
-    font-weight:700;
-
-    margin-bottom:36px;
-
-    white-space:nowrap;
-
+.logo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin: 0 auto 20px;
 }
 
-.intro{
+h1 {
+    color: #5f4732;
 
-    font-size:20px;
-    font-weight:400;
-    line-height:1.9;
+    font-size: 50px;
+    font-weight: 700;
 
-    margin-bottom:30px;
+    margin-bottom: 36px;
 
+    white-space: nowrap;
 }
 
-.content{
+.intro {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.9;
 
-    font-size:20px;
-    font-weight:400;
-    line-height:1.9;
-
-    margin-bottom:36px;
-
+    margin-bottom: 30px;
 }
 
-.quote{
+.content {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.9;
 
-    font-size:20px;
-    font-weight:600;
-    line-height:1.9;
-
-    color:#666;
-
-    margin-bottom:52px;
-
+    margin-bottom: 36px;
 }
 
-.button{
+.quote {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.9;
 
-    display:inline-flex;
+    color: #666;
 
-    align-items:center;
-
-    gap:12px;
-
-    padding:16px 38px;
-
-    border-radius:999px;
-
-    background:#90A876;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    font-size:22px;
-
-    font-weight:600;
-
-    transition:.25s;
-
+    margin-bottom: 52px;
 }
 
-.button:hover{
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
-    background:#677b52;
+    padding: 16px 38px;
 
+    border-radius: 999px;
+
+    background: #90A876;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    transition: .25s;
 }
 
-.button span:first-child{
+.button:hover {
+    background: #677b52;
+}
 
-    font-size:24px;
-
+.button span:first-child {
+    font-size: 24px;
 }
 
 /* ---------- 手機 ---------- */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-main{
+    main {
+        min-height: 100dvh;
 
-    min-height:100dvh;
+        align-items: flex-start;
 
-    align-items:flex-start;
+        padding: 36px 18px;
+    }
 
-    padding:36px 18px;
+    .logo {
+        width: 100px;
+        margin-bottom: 18px;
+    }
 
-}
+    h1 {
+        font-size: 38px;
+        margin-bottom: 28px;
+    }
 
-h1{
+    .intro {
+        font-size: 18px;
+        font-weight: 400;
 
-    font-size:38px;
+        margin-bottom: 28px;
+    }
 
-    margin-bottom:28px;
+    .content {
+        font-size: 18px;
+        font-weight: 400;
 
-}
+        margin-bottom: 36px;
+    }
 
-.intro{
+    .quote {
+        font-size: 18px;
+        font-weight: 600;
 
-    font-size:18px;
-    font-weight:400;
+        line-height: 1.9;
 
-    margin-bottom:28px;
+        margin-bottom: 52px;
+    }
 
-}
+    .button {
+        font-size: 20px;
+        padding: 15px 34px;
+    }
 
-.content{
-
-    font-size:18px;
-    font-weight:400;
-
-    margin-bottom:36px;
-
-}
-
-.quote{
-
-    font-size:18px;
-    font-weight:600;
-
-    line-height:1.9;
-
-    margin-bottom:52px;
-
-}
-
-.button{
-
-    font-size:20px;
-
-    padding:15px 34px;
-
-}
-
-.button span:first-child{
-
-    font-size:22px;
-
-}
+    .button span:first-child {
+        font-size: 22px;
+    }
 
 }
 
@@ -222,7 +195,13 @@ h1{
 
 <div class="container">
 
-<h1>《五力》森林 </h1>
+<img
+    class="logo"
+    src="icon-512.png"
+    alt="五力森林 Logo"
+>
+
+<h1>《五力》森林</h1>
 
 <div class="intro">
 
@@ -245,8 +224,9 @@ h1{
 </div>
 
 <a
-class="button"
-href="path.html"
+    class="button"
+    href="path.html"
+>
 
 <span>👣</span>
 
